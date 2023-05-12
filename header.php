@@ -70,7 +70,7 @@
         <div class="auto-container">
             <nav class="cssmenu d-flex">
 
-                <ul class="menu_ul d-flex w-100 p-0 justify-content-between">
+                <ul class="menu_ul d-flex w-100 p-0">
                     <li class="active"><a href="index.php"> Home</a></li>
                     <li>
                         <a class="sub_menu_link" href="#">About</a>
@@ -138,7 +138,7 @@
                     <li><a href="contact.php">Contact</a></li>
 
                 </ul>
-                <div class="right_menu d-flex">
+                <div class="right_menu d-flex bg-white align-items-center">
                     <li class="right_box text-right">
                         <p>for Emergecy</p>
                         <a href="tel:+ (801) 855 678 90 "> + (801) 855 678 90 </a>

@@ -90,7 +90,15 @@ h5 {
   font-weight: 700;
   text-transform: capitalize;
 }
+ /* the slides */
+ .slick-slide {
+  margin: 0 0px;
+}
 
+/* the parent */
+.slick-list {
+  margin: 0 -0px;
+}
 /* new start  */
 
 .news_content h5 {
@@ -1151,7 +1159,9 @@ nav.cssmenu::before {
 .call_top img.img-fluid {
   filter: brightness(0) invert(1);
   width: 34px;
-  transform: translateY(18px);
+  /* transform: translateY(0px); */
+  z-index: 999;
+  position: relative;
 }
 .call_top {
   position: relative;
@@ -1168,7 +1178,7 @@ nav.cssmenu::before {
 .call_top::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: 0;
   bottom: -20px;
   width: 50%;
   height: 40px;
@@ -1180,7 +1190,7 @@ nav.cssmenu::before {
 .call_top::after {
   content: "";
   position: absolute;
-  right: -7px;
+  right: -4px;
   bottom: -20px;
   width: 50%;
   height: 40px;
@@ -1191,6 +1201,9 @@ nav.cssmenu::before {
 }
 .right_box {
   background: white;
+  width: 206px;
+  padding-right: 18px;
+  /* height: 69px; */
 }.right_box.text-right a {
   padding: 0;
   color: #21242d;

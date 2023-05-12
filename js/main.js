@@ -48,7 +48,7 @@ $(document).ready(function () {
 // testimonial end
 $(document).ready(function () {
   $(".logo_block").slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     speed: 600,
     draggable: true,
