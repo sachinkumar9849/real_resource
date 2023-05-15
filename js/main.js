@@ -1,3 +1,38 @@
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+  return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+  return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+  return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+  return false;
+  }
+  }
+  
+  
+$(document).ready(function () {
+  //jquery for toggle sub menus
+  $(".sub-btn-large").click(function () {
+    $(this).next(".sub-menu-large").slideToggle();
+    $(this).find(".dropdown").toggleClass("rotate");
+  });
+
+  //jquery for expand and collapse the sidebar
+  $(".menu-btn-large").click(function () {
+    $(".side-bar-large").addClass("active");
+    $(".menu-btn-large").css("visibility", "hidden");
+  });
+
+  $(".close-btn-large").click(function () {
+    $(".side-bar-large").removeClass("active");
+    $(".menu-btn-large").css("visibility", "visible");
+  });
+});
+// menu mobile end
 var btn = $("#button");
 
 $(window).scroll(function () {
